@@ -1,0 +1,30 @@
+.nav {
+    background-color: black;
+    border: 11px solid #c8d3d6;
+    margin: 9px;
+}
+body{
+    color: bisque;
+}
+
+li {
+    margin: 23px;
+    list-style: none;
+}
+
+ul {
+    width: 500px;
+    height: 50px;
+    font-size: 29px;
+    padding: 18px 500px;
+    display: flex;
+}
+
+.container {
+    text-align: start;
+    font-size: 23px;
+    color: #8e6d1c;
+    padding: 20px;
+    border: 2px solid;
+    background-color: #c8d3d6
+}

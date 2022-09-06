@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        header {
+            background-color: #56b856de;
+            border: 2px solid #245829d6;
+            margin: auto;
+            width: 1200px;
+            text-align: center;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 34px;
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 36px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: blue;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 15px 72px;
+        }
+
+        .navbar input {
+            border: 2px solid B;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/infographics-on-the-topic-of-stock-markets-picture-id1311808703?k=20&m=1311808703&s=612x612&w=0&h=0FwaNrVgk-sDBAt3WT36c9NLc4ZK08dGjB5daXmqt34=");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 200ppx;
+            height: 100vh;
+            background-attachment: fixed;
+            font-family: verdana;
+        }
+
+        .container {
+            font-size: 17px;
+            color: #fff;
+        }
+        .details{
+            color: #eee;
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <img src="data:image/jpeg;base64,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"
+        alt=""> -->
+    <!-- <header class="top">
+        <h3>Wellcome to sameer's Blog</h3>
+
+    </header> -->
+
+    <nav class="navbar">
+        <ul>
+            <li class="item"><a href='/'>Web</a></li>
+            <li class="item"><a href='/index' target="_blank">Home</a></li>
+            <li class="item"><a href='/about' target="_blank">About</a></li>
+            <li class="item"><a href='/services' target="_blank">Services</a></li>
+            <li class="item"><a href='/contact' target="_blank">Contact</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="search this website">
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        THIS IS INDEX:
+
+    </div>
+    <div class="details">
+        <details>
+            <summary>Asalam O Alikum,</summary>
+            <p>My name is SAMEER AHMED KHAN.I have done my primery/School studies from T.C.F (The citizen Foundation)
+                School in 2015.
+                Then i continoue my secoundry dtudies so first i take addmission in FSC to supirer Science Collage in
+                2015,
+                I gave my exams but i can't maintain my focus because i had come from in a horriable and dangerous
+                accident which i got in my last year of my school,
+                thats why they resticate me on my last year without any copperate. so that's why i gave my matric exams
+                private.
+                ohh yeah i know you have a question about my accident, so yeah, 10th of muharrum ul haram, 04, nov,2015.
+                4:30 PM my right leg braked in bike accident its a major fracture.
+                any how, then i coudent pass my FSC so i joined technical collage and start diploma in machanical feild,
+                with diploma i joined TOYOYA insdus motor comapany for 3 years apprenticeship.
+                After D.A.E apply in BS in computer Science,then start my graduation in 2021.
+                in first semester major programming subject which i learn is C++.
+                in second semester java in OOP(object orientation programme),
+                3rd semester i learn algorithum, data structure,machine languge,
+                4rth semester python & Database management system on mySQL,
+                now i am doing online course in back-end and front-end/web developement on javaScript,HTML,CSS with
+                Node.JS.
+                THANK YOU!</p>
+        </details>
+    </div>
+</body>
+
+</html>

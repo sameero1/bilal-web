@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Zone</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 36px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: blue;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 15px 72px;
+        }
+
+        .navbar input {
+            border: 2px solid B;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .banner-area {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .content-area {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .content {
+            text-align: center;
+
+        }
+
+        .content h1 {
+            font-size: 80px;
+            color: #fff;
+        }
+
+        .content p {
+            font-size: 30px;
+            color: #ddd;
+        }
+
+        #btn {
+            border: none;
+            outline: none;
+            padding: 15px;
+            margin-top: 100px;
+            border-radius: 4px;
+            color: #eee;
+            font-size: 18px;
+            cursor: pointer;
+            background: #222;
+            /* padding: 10px 14px; */
+            /* background-color: #745d5d; */
+            /* border: 2px solid #b5c325; */
+            /* color: white; */
+            /* font-weight: bold; */
+            /* border-radius: 8px; */
+            cursor: pointer;
+
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/infographics-on-the-topic-of-stock-markets-picture-id1311808703?k=20&m=1311808703&s=612x612&w=0&h=0FwaNrVgk-sDBAt3WT36c9NLc4ZK08dGjB5daXmqt34=");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 200ppx;
+            height: 100vh;
+            background-attachment: fixed;
+            font-family: verdana;
+        }
+
+        /* .btn {
+            background-color: rgb(199, 181, 218);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        } */
+
+        .a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(45, 190, 65);
+            background-color: white;
+        }
+
+        a:visited {
+            background-color: #222;
+            color: #eee;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* #btn {
+            /* padding: 10px 14px;
+            background-color: #745d5d;
+            border: 2px solid #b5c325;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer; */
+
+        /* } */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="item"><a href='/'>Web</a></li>
+            <li class="item"><a href='/index' target="_blank">Home</a></li>
+            <li class="item"><a href='/about' target="_blank">About</a></li>
+            <li class="item"><a href='/services' target="_blank">Services</a></li>
+            <li class="item"><a href='/contact' target="_blank">Contact</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="search this website">
+            </div>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="banner-area">
+        <div class="content-area">
+            <div class="content">
+                <h1>Web Zone</h1>
+                <p>Sameer Ahmed Khan Programming Web</p>
+                <button id="btn" onclick="toggleHide()">Read more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>This Is My Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum velit enim quo reprehenderit,
+            inventore dolore deleniti modi ullam, tenetur, fuga vero optio. Dignissimos aut inventore, facere minus
+            neque, possimus temporibus perspiciatis vero fugit, praesentium maiores excepturi dolor facilis! Laudantium
+            recusandae illo reprehenderit id dignissimos minus aperiam, odit sapiente quaerat obcaecati quo accusantium
+            quidem fugit inventore voluptates consequatur enim? Tempore molestiae assumenda, eum provident earum iusto
+            hic tempora non? Reprehenderit numquam magnam perferendis at temporibus sequi molestias, commodi ducimus hic
+            necessitatibus, voluptatum vero amet porro tenetur quos cumque vel dolorum quisquam corrupti, voluptates
+            vitae. Quam ab, velit assumenda incidunt delectus molestiae impedit nemo eos aperiam sapiente id, beatae,
+            est dignissimos exercitationem doloremque blanditiis tenetur natus ipsa ipsam amet autem libero? Tempora
+            numquam deserunt in! Consequatur soluta debitis fugiat animi molestias sequi voluptatem, vero aspernatur
+            quidem porro similique vitae? Magnam autem tenetur natus dicta velit, nisi fuga neque, distinctio maiores
+            optio adipisci amet atque. Eius consequuntur nesciunt, ipsa distinctio veniam culpa maxime nobis incidunt
+            iure porro iste deleniti vitae explicabo ratione. Similique, fugiat perspiciatis optio pariatur eaque nihil
+            dicta eum, asperiores repudiandae neque eius illum atque consequatur amet repellendus, quas ullam laborum
+            iure recusandae quibusdam provident officia. Temporibus reiciendis eaque itaque sed tempora. Incidunt eaque
+            ea eius, ut placeat quam dolor. Harum, a officiis! Ad et non similique molestias dolores! Quibusdam,
+            provident reprehenderit nostrum dignissimos quasi consequuntur ea aut quos maiores reiciendis aliquam! Cum,
+            dolore.</p>
+
+    </div>
+
+
+</body>
+<script src="index1.js"></script>
+
+</html>
